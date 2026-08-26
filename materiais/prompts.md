@@ -1,142 +1,178 @@
 # 🧪 Engenharia de Prompts — Registro de testes
 
-## Objetivo
+## 🎯 Objetivo
 
-Documentar a evolução dos prompts utilizados no NotebookLM e demonstrar o processo de tentativa, avaliação e refinamento.
+Documentar os prompts utilizados durante o desenvolvimento do Caderno Temático no NotebookLM, registrando o processo de elaboração, teste, análise e refinamento das perguntas.
 
----
-
-## Teste 01 — Pergunta aberta
-
-**Prompt:**
-
-> O que é Inteligência Artificial Generativa?
-
-**Objetivo:** obter uma definição inicial.
-
-**Problema esperado:** pergunta ampla, podendo gerar resposta genérica.
-
-**Aprendizado:** adicionar contexto, público e formato pode tornar a resposta mais útil.
+O objetivo foi utilizar a IA como ferramenta de aprendizagem ativa, buscando compreender conceitos de Inteligência Artificial Generativa a partir das fontes selecionadas.
 
 ---
 
-## Teste 02 — Prompt contextualizado
+# 🧪 Teste 01 — Introdução à IA Generativa
 
-**Prompt:**
+### Prompt
 
-> Explique o que é Inteligência Artificial Generativa para um estudante de Ciência da Computação. Apresente definição, funcionamento básico, exemplos de aplicação, tecnologias envolvidas e limitações. Organize a resposta em tópicos e use linguagem didática.
+> O que é Inteligência Artificial Generativa? Explique para um estudante de Ciência da Computação que está começando a estudar o assunto. Apresente uma definição, explique como funciona, dê exemplos de aplicações e apresente suas principais limitações. Utilize as fontes disponíveis neste notebook.
 
-**Melhoria:** define público, escopo e formato.
+### Objetivo
 
----
+Compreender o conceito inicial de Inteligência Artificial Generativa, seu funcionamento, aplicações e limitações.
 
-## Teste 03 — Prompt baseado nas fontes
+### Resultado
 
-**Prompt:**
+A resposta apresentou conceitos fundamentais sobre IA Generativa, incluindo Deep Learning, tokens, Transformers, treinamento, aplicações e principais riscos.
 
-> Utilize exclusivamente as fontes disponíveis neste notebook para explicar Inteligência Artificial Generativa. Divida a resposta em definição, funcionamento, exemplos, relação com LLMs, limitações e uso responsável. Para cada seção, indique qual fonte sustenta a informação. Caso uma informação não esteja presente nas fontes, informe explicitamente que ela não foi encontrada.
+### Aprendizado
 
-**Melhoria:** adiciona rastreabilidade e reduz extrapolações.
-
----
-
-## Teste 04 — Comparação de conceitos
-
-**Prompt:**
-
-> Com base exclusivamente nas fontes deste notebook, compare LLM, IA Generativa e RAG. Apresente definição, objetivo, funcionamento, relação entre os conceitos, exemplo prático e principal limitação. Organize em tabela e finalize com uma explicação simples de como os três podem aparecer juntos em uma aplicação real.
-
-**Objetivo:** verificar compreensão das relações entre conceitos.
+Foi possível compreender a diferença entre IA tradicional e IA Generativa e identificar suas principais aplicações e limitações.
 
 ---
 
-## Teste 05 — Aprendizagem ativa
+# 🧪 Teste 02 — LLMs, Tokens, Contexto e Transformers
 
-**Prompt:**
+### Prompt
 
-> Atue como um professor de Ciência da Computação. Faça uma pergunta por vez sobre Inteligência Artificial Generativa. Não mostre a resposta antes que eu tente responder. Depois avalie minha resposta, corrija erros, explique o conceito e faça uma nova pergunta aumentando gradualmente a dificuldade. Utilize as fontes disponíveis neste notebook como base.
+> Explique o que são Large Language Models (LLMs). Explique também o que são tokens, contexto, Transformers e mecanismo de atenção. Utilize exclusivamente as fontes disponíveis neste notebook e apresente a resposta de maneira didática.
 
-**Objetivo:** utilizar a IA como tutora e não apenas como geradora de resumos.
+### Objetivo
+
+Compreender os principais componentes técnicos relacionados aos modelos de linguagem modernos.
+
+### Resultado
+
+A resposta explicou LLMs, tokens, contexto, Transformers e mecanismo de self-attention.
+
+### Aprendizado
+
+Foi possível compreender que os modelos de linguagem processam tokens dentro de um contexto e utilizam arquiteturas como Transformers para identificar relações entre diferentes partes de uma sequência.
 
 ---
 
-# 🩹 Troubleshooting
+# 🧪 Teste 03 — Engenharia de Prompts
 
-| Sintoma | Diagnóstico | Ajuste |
+### Prompt
+
+> Explique o conceito de Engenharia de Prompts. Mostre quais elementos podem fazer parte de um prompt bem estruturado e explique por que contexto, objetivo, restrições e formato de saída são importantes. Utilize as fontes disponíveis neste notebook.
+
+### Objetivo
+
+Compreender como a estrutura de um prompt influencia a qualidade e a organização das respostas geradas pela IA.
+
+### Resultado
+
+A resposta apresentou elementos como objetivo, instruções, persona, contexto, restrições, exemplos, tom e formato de saída.
+
+### Aprendizado
+
+Foi possível perceber que prompts mais claros e estruturados oferecem maior controle sobre o resultado produzido pelo modelo.
+
+---
+
+# 🧪 Teste 04 — Retrieval-Augmented Generation (RAG)
+
+### Prompt
+
+> Explique o conceito de Retrieval-Augmented Generation (RAG). Explique como funciona o processo de recuperação de informações e geração da resposta. Utilize principalmente a fonte acadêmica de Lewis et al. e explique o conceito em linguagem adequada para um estudante iniciante.
+
+### Objetivo
+
+Compreender o funcionamento do RAG e sua relação com modelos de linguagem.
+
+### Resultado
+
+A resposta explicou o processo de recuperação de documentos e geração de respostas, apresentando os conceitos de memória paramétrica, memória não paramétrica, retriever e generator.
+
+### Aprendizado
+
+Foi possível compreender como o RAG permite utilizar informações externas para complementar o conhecimento de um modelo de linguagem.
+
+---
+
+# 🧪 Teste 05 — Riscos da IA Generativa
+
+### Prompt
+
+> Quais são os principais riscos associados à Inteligência Artificial Generativa? Explique conceitos como alucinação, viés, privacidade, segurança e confiabilidade. Utilize as fontes disponíveis neste notebook, especialmente o material do NIST.
+
+### Objetivo
+
+Identificar os principais riscos relacionados ao desenvolvimento e utilização de sistemas de IA Generativa.
+
+### Resultado
+
+A resposta apresentou riscos como confabulação/alucinação, viés, homogeneização, privacidade, prompt injection, data poisoning, confiabilidade, impacto ambiental e propriedade intelectual.
+
+### Aprendizado
+
+Foi possível compreender que a utilização da IA Generativa exige avaliação crítica, validação das informações e preocupação com segurança, privacidade e uso responsável.
+
+---
+
+# 🧪 Teste 06 — Refinamento e validação por fontes
+
+### Prompt
+
+> Utilize exclusivamente as fontes disponíveis neste notebook para explicar Inteligência Artificial Generativa.
+>
+> Divida a resposta em:
+>
+> 1. definição;
+> 2. funcionamento;
+> 3. LLMs;
+> 4. Engenharia de Prompts;
+> 5. RAG;
+> 6. limitações;
+> 7. uso responsável.
+>
+> Para cada seção, indique qual fonte sustenta a informação.
+> Caso uma informação não esteja presente nas fontes, informe que ela não foi encontrada.
+
+### Objetivo
+
+Testar um prompt mais estruturado, com restrições, organização por tópicos e exigência de rastreabilidade das informações.
+
+### Resultado
+
+A resposta apresentou uma explicação dividida em sete seções e relacionou os conceitos às fontes utilizadas no notebook.
+
+### Aprendizado
+
+O teste demonstrou que a definição de escopo, estrutura, restrições e critérios de validação contribui para respostas mais organizadas e direcionadas.
+
+---
+
+# 🩹 Cicatrizes / Troubleshooting
+
+Durante os testes, foram identificados alguns pontos que influenciaram a qualidade das respostas.
+
+| Problema | Possível causa | Solução |
 |---|---|---|
-| Resposta superficial | Pouco contexto | Definir nível do estudante |
-| Resposta genérica | Prompt aberto | Especificar objetivo |
-| Muitos assuntos | Escopo amplo | Delimitar tópicos |
-| Resposta longa | Formato não definido | Definir tamanho/estrutura |
-| Sem evidências | Fontes não exigidas | Pedir referências |
-| Informação ausente | Fonte insuficiente | Adicionar ou substituir fonte |
-| Conceito difícil | Linguagem inadequada | Pedir explicação progressiva |
-| Possível alucinação | Extrapolação do modelo | Restringir às fontes |
+| Resposta superficial | Pouco contexto | Definir o nível do estudante |
+| Resposta genérica | Pergunta muito aberta | Especificar o objetivo |
+| Muitos assuntos | Escopo amplo | Dividir o conteúdo em tópicos |
+| Resposta desorganizada | Formato não definido | Especificar a estrutura |
+| Falta de rastreabilidade | Fontes não exigidas | Solicitar indicação das fontes |
+| Informação não encontrada | Fonte insuficiente | Adicionar ou substituir fontes |
+| Conceito difícil | Linguagem inadequada | Solicitar explicação didática |
+| Possível alucinação | Extrapolação do modelo | Restringir a resposta às fontes |
 
-## Processo de refinamento
+---
+
+# 🔄 Processo de refinamento
+
+O processo utilizado durante o projeto pode ser representado da seguinte maneira:
 
 ```text
 Prompt
-  ↓
+   ↓
 Resposta
-  ↓
-Avaliação crítica
-  ↓
-Identificação do problema
-  ↓
-Refinamento
-  ↓
-Nova resposta
-  ↓
-Comparação
-```
-
----
-
-# ♻️ Biblioteca de prompts reutilizáveis
-
-## 1. Explicação de conceito
-
-> Explique [CONCEITO] para um estudante de Ciência da Computação que está começando a estudar o assunto. Apresente definição, funcionamento, exemplo prático, aplicação e limitações. Finalize com 5 pontos essenciais para memorizar.
-
-## 2. Resumo
-
-> Resuma as fontes disponíveis sobre [TEMA]. Organize em conceitos fundamentais, conceitos intermediários, exemplos, aplicações e limitações. Não adicione informações que não estejam sustentadas pelas fontes.
-
-## 3. Comparação
-
-> Compare [CONCEITO A] e [CONCEITO B]. Apresente definição, objetivo, funcionamento, vantagens, limitações e exemplos. Organize em tabela e utilize exclusivamente as fontes disponíveis.
-
-## 4. Revisão
-
-> Crie uma revisão sobre [TEMA] contendo 10 perguntas de múltipla escolha. Não apresente as respostas inicialmente. Depois que eu responder, corrija minhas respostas, explique os erros, indique os assuntos que devo revisar e atribua uma nota de 0 a 10.
-
-## 5. Método socrático
-
-> Atue como um professor de Ciência da Computação. Quero aprender [TEMA]. Faça uma pergunta por vez e não entregue a resposta imediatamente. Analise minha resposta, identifique acertos e erros, explique o conceito e faça uma nova pergunta com dificuldade progressiva.
-
-## 6. Validação
-
-> Analise a resposta abaixo utilizando exclusivamente as fontes disponíveis neste notebook. Classifique cada afirmação como: sustentada pelas fontes, parcialmente sustentada ou não encontrada. Não tente completar informações ausentes.
-
-**Resposta:**
-
-[COLE A RESPOSTA AQUI]
-
-## 7. Preparação para entrevista
-
-> Simule uma entrevista técnica sobre [TEMA] para uma vaga de estágio em tecnologia. Faça uma pergunta por vez. Depois da minha resposta, avalie precisão técnica, clareza, domínio do conceito e capacidade de fornecer exemplos. Dê uma nota de 0 a 10 e indique como melhorar.
-
----
-
-# 📊 Critérios de avaliação
-
-Avalie cada resposta de 1 a 5 em:
-
-- Precisão;
-- Aderência às fontes;
-- Clareza;
-- Organização;
-- Profundidade;
-- Utilidade para estudo;
-- Rastreabilidade.
+   ↓
+Análise crítica
+   ↓
+Identificação de problemas
+   ↓
+Refinamento do prompt
+   ↓
+Novo teste
+   ↓
+Comparação dos resultados
