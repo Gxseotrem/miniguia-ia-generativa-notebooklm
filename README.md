@@ -6,239 +6,390 @@
 
 > Projeto desenvolvido como parte do desafio da DIO sobre aprendizagem ativa com Inteligência Artificial e uso do NotebookLM.
 
+---
+
 ## 📚 Sobre o projeto
 
 Este projeto apresenta um **Caderno Temático sobre Inteligência Artificial Generativa**, desenvolvido com apoio do **NotebookLM** como ferramenta de aprendizagem ativa.
 
 A proposta foi utilizar a Inteligência Artificial não apenas para obter respostas prontas, mas como ferramenta para pesquisar, organizar informações, comparar fontes, formular perguntas, testar prompts, identificar limitações e consolidar conhecimentos.
 
+O material foi organizado em um repositório no GitHub para servir como registro do processo de aprendizagem e também como parte do meu portfólio acadêmico e profissional.
+
+---
+
 ## 🎯 Contexto e objetivos
 
-### Contexto
+A Inteligência Artificial Generativa vem ganhando espaço em áreas como desenvolvimento de software, educação, pesquisa, produção de conteúdo e análise de informações.
 
-A Inteligência Artificial Generativa passou a fazer parte de atividades acadêmicas e profissionais, sendo utilizada em geração de textos, imagens, código, análise de documentos, educação e automação.
-
-Como estudante de Ciência da Computação, escolhi o tema para compreender os conceitos por trás das ferramentas de IA e desenvolver uma metodologia de estudo baseada em fontes e pensamento crítico.
-
-### Objetivo geral
-
-Construir uma base de conhecimento introdutória sobre **Inteligência Artificial Generativa**, utilizando o NotebookLM para realizar aprendizagem baseada em fontes selecionadas.
+O objetivo deste projeto foi estudar os principais conceitos relacionados à IA Generativa por meio de fontes abertas e utilizar o NotebookLM para organizar, consultar e consolidar esse conhecimento.
 
 ### Objetivos específicos
 
-- Compreender IA Generativa e LLMs.
-- Estudar tokens, contexto, Transformers e atenção.
-- Compreender Engenharia de Prompts.
-- Estudar RAG.
-- Identificar alucinações e vieses.
-- Conhecer princípios de uso responsável da IA.
-- Desenvolver prompts reutilizáveis.
-- Documentar testes, erros e refinamentos.
+- Compreender o conceito de Inteligência Artificial Generativa;
+- Entender o funcionamento dos Large Language Models (LLMs);
+- Compreender tokens, contexto, Transformers e mecanismo de atenção;
+- Estudar Engenharia de Prompts;
+- Entender o funcionamento do RAG;
+- Identificar limitações e riscos da IA Generativa;
+- Desenvolver uma abordagem crítica para utilização de ferramentas de IA;
+- Criar prompts reutilizáveis para estudos futuros.
 
-## 🧰 Ferramentas
+---
 
-| Ferramenta | Utilização |
-|---|---|
-| NotebookLM | Organização das fontes, perguntas e estudo |
-| GitHub | Versionamento e publicação |
-| Markdown | Documentação |
-| Fontes abertas | Base de conhecimento |
+## 🧰 Ferramentas utilizadas
 
-## 🔎 1. Curadoria das fontes
+- **NotebookLM** — organização das fontes, consultas e aprendizagem baseada em documentos;
+- **GitHub** — documentação e armazenamento do projeto;
+- **Markdown** — organização e documentação do conhecimento;
+- **Inteligência Artificial Generativa** — utilizada como ferramenta de apoio ao processo de aprendizagem.
 
-Foram selecionadas cinco fontes abertas, combinando material introdutório, documentação técnica, referência institucional e publicação acadêmica.
+---
 
-| Fonte | Utilização |
-|---|---|
-| IBM — IA Generativa | Fundamentos e aplicações |
-| Google for Developers — LLMs | LLMs, tokens, contexto e Transformers |
-| Google Cloud — Prompt Design | Engenharia de prompts |
-| NIST — GenAI Profile | Riscos e uso responsável |
-| Lewis et al. — RAG | Retrieval-Augmented Generation |
+# 🔎 Curadoria das fontes
 
-Os links e a justificativa de seleção estão em [`fontes/fontes.md`](fontes/fontes.md).
+Para desenvolver o Caderno Temático, foram selecionadas fontes abertas relacionadas à Inteligência Artificial Generativa, modelos de linguagem, Engenharia de Prompts, RAG e uso responsável de IA.
 
-## 🧠 2. Miniguia de estudo
+As fontes foram adicionadas ao NotebookLM para que as consultas e análises fossem realizadas com base no material selecionado.
 
-### 2.1 Inteligência Artificial Generativa
+As fontes utilizadas estão documentadas em:
 
-IA Generativa é uma área da Inteligência Artificial capaz de produzir novos conteúdos a partir de padrões aprendidos durante o treinamento de modelos. Pode gerar textos, imagens, vídeos, áudio e código.
+📁 [`fontes/fontes.md`](fontes/fontes.md)
 
-### 2.2 LLMs
+Entre as principais referências utilizadas estão materiais de:
 
-LLM significa **Large Language Model**. São modelos de linguagem treinados em grandes quantidades de dados e utilizados em tarefas como geração, resumo, tradução, perguntas e respostas e programação.
+- IBM;
+- NIST — National Institute of Standards and Technology;
+- Google Cloud;
+- Google Developers;
+- Lewis et al. — trabalho acadêmico sobre Retrieval-Augmented Generation (RAG).
 
-### 2.3 Tokens
+---
 
-Tokens são unidades utilizadas para representar o texto processado pelo modelo. Dependendo da tokenização, um token pode corresponder a uma palavra, parte de palavra ou pontuação.
+# 🧪 Engenharia de Prompts e testes realizados
 
-### 2.4 Contexto
+Durante o desenvolvimento do projeto, foram realizados testes com diferentes prompts no NotebookLM.
 
-Contexto são as informações disponíveis para o modelo durante uma interação. Um prompt com objetivo, público, restrições e formato definidos tende a ser mais direcionado.
+O processo utilizado foi:
 
-### 2.5 Transformers e atenção
+**Perguntar → analisar → identificar limitações → refinar → testar novamente.**
 
-Transformers são arquiteturas amplamente usadas em modelos modernos de linguagem. O mecanismo de atenção permite considerar relações entre diferentes partes de uma sequência para produzir representações e previsões mais adequadas.
+---
 
-### 2.6 Engenharia de Prompts
+## 🧪 Teste 1 — Introdução à IA Generativa
 
-É o processo de criar, testar, avaliar e melhorar instruções para modelos de IA. Um bom prompt pode especificar objetivo, contexto, instruções, restrições, formato e exemplos.
+### Prompt utilizado
 
-### 2.7 RAG
+> O que é Inteligência Artificial Generativa? Explique para um estudante de Ciência da Computação que está começando a estudar o assunto. Apresente uma definição, explique como funciona, dê exemplos de aplicações e apresente suas principais limitações. Utilize as fontes disponíveis neste notebook.
 
-**Retrieval-Augmented Generation (RAG)** combina recuperação de informações externas com geração de respostas. De forma simplificada: pergunta → busca → recuperação de trechos → contexto → geração.
+### Resultado resumido
 
-### 2.8 Alucinações
+A resposta apresentou a IA Generativa como uma área da Inteligência Artificial capaz de criar novos conteúdos, como textos, imagens, vídeos, áudios e códigos.
 
-Uma alucinação ocorre quando o modelo apresenta informação falsa, inventada ou sem sustentação como se fosse verdadeira. Por isso, informações importantes devem ser verificadas e, quando possível, vinculadas a fontes.
+Também explicou conceitos relacionados ao funcionamento da tecnologia, incluindo Deep Learning, tokens, Transformers, treinamento, fine-tuning e RLHF.
 
-### 2.9 Viés
+Foram apresentadas aplicações em desenvolvimento de software, geração de imagens e vídeos, ciência, medicina e personalização.
 
-Modelos podem refletir padrões ou vieses presentes nos dados de desenvolvimento. O contexto de aplicação, a qualidade dos dados e a avaliação humana são importantes para reduzir impactos inadequados.
+A resposta também destacou riscos como alucinações, vieses, segurança, privacidade, propriedade intelectual e impacto ambiental.
 
-### 2.10 Uso responsável
+### 💡 Aprendizado
 
-O uso responsável considera precisão, segurança, privacidade, transparência, vieses, propriedade intelectual, impactos sociais e supervisão humana.
+A IA Generativa não apenas processa informações existentes, mas pode criar novos conteúdos a partir dos padrões aprendidos durante seu treinamento.
 
-## 🧪 3. Engenharia de Prompts e testes
+Também foi possível perceber que a tecnologia possui limitações e exige validação e utilização responsável.
 
-### Teste 1 — Prompt amplo
+---
 
-> O que é Inteligência Artificial Generativa?
+# 🧪 Teste 2 — LLMs, Tokens, Contexto e Transformers
 
-**Objetivo:** obter uma definição inicial.
+### Prompt utilizado
 
-**Problema:** muito aberto; pode resultar em resposta superficial ou fora do nível desejado.
+> Explique o que são Large Language Models (LLMs). Explique também o que são tokens, contexto, Transformers e mecanismo de atenção. Utilize exclusivamente as fontes disponíveis neste notebook e apresente a resposta de maneira didática.
 
-### Teste 2 — Prompt contextualizado
+### Resultado resumido
 
-> Explique o que é Inteligência Artificial Generativa para um estudante de Ciência da Computação. Apresente definição, funcionamento básico, exemplos, principais tecnologias e limitações. Organize em tópicos e use linguagem didática.
+A resposta explicou que os **LLMs** são modelos treinados com grandes quantidades de texto para aprender padrões da linguagem.
 
-**Melhoria:** adiciona público, escopo e formato.
+Também foram explicados:
 
-### Teste 3 — Prompt baseado nas fontes
+- Tokens;
+- Contexto;
+- Transformers;
+- Self-attention.
 
-> Utilize exclusivamente as fontes disponíveis neste notebook para explicar Inteligência Artificial Generativa. Divida a resposta em definição, funcionamento, exemplos, relação com LLMs, limitações e uso responsável. Para cada seção, indique a fonte que sustenta a informação. Caso algo não esteja presente nas fontes, informe explicitamente que não foi encontrado.
+Os tokens foram apresentados como unidades utilizadas pelos modelos para processar textos, enquanto o contexto representa as informações utilizadas para interpretar uma sequência.
 
-**Melhoria:** aumenta rastreabilidade e reduz extrapolação.
+Os Transformers foram apresentados como uma arquitetura fundamental dos LLMs modernos, utilizando mecanismos de atenção para identificar relações importantes entre diferentes partes de uma sequência.
 
-### Teste 4 — Comparação
+### 💡 Aprendizado
 
-> Com base exclusivamente nas fontes deste notebook, compare LLM, IA Generativa e RAG. Apresente definição, objetivo, funcionamento, relação entre os conceitos, exemplo prático e principal limitação. Organize em tabela.
+LLMs não trabalham simplesmente com palavras isoladas. Eles processam **tokens dentro de um contexto**, utilizando arquiteturas como Transformers e mecanismos de atenção para compreender relações entre diferentes elementos do texto.
 
-**Objetivo:** testar compreensão das relações entre conceitos.
+---
 
-### Teste 5 — Aprendizagem ativa
+# 🧪 Teste 3 — Engenharia de Prompts
 
-> Atue como um professor de Ciência da Computação. Faça uma pergunta por vez sobre Inteligência Artificial Generativa. Não mostre a resposta antes que eu tente responder. Depois avalie minha resposta, corrija erros, explique o conceito e faça uma nova pergunta com dificuldade progressiva. Utilize as fontes disponíveis como base.
+### Prompt utilizado
 
-**Objetivo:** transformar a IA em ferramenta de estudo ativo.
+> Explique o conceito de Engenharia de Prompts. Mostre quais elementos podem fazer parte de um prompt bem estruturado e explique por que contexto, objetivo, restrições e formato de saída são importantes. Utilize as fontes disponíveis neste notebook.
 
-## 🩹 4. Cicatrizes / Troubleshooting
+### Resultado resumido
 
-| Problema | Possível causa | Solução |
-|---|---|---|
-| Resposta genérica | Prompt aberto | Adicionar contexto |
-| Resposta superficial | Objetivo pouco definido | Especificar profundidade |
-| Muitos assuntos | Escopo amplo | Definir tópicos |
-| Resposta extensa | Formato não definido | Definir tamanho/estrutura |
-| Sem referências | Fontes não exigidas | Pedir rastreabilidade |
-| Informação ausente | Fonte insuficiente | Adicionar fonte |
-| Conceito difícil | Público não definido | Definir nível do estudante |
-| Possível alucinação | Extrapolação | Restringir às fontes |
+A resposta apresentou a Engenharia de Prompts como um processo de criação, teste e refinamento de instruções para obter respostas mais úteis e precisas dos modelos de linguagem.
 
-O processo de refinamento foi:
+Entre os elementos apresentados estão:
+
+- Objetivo;
+- Instruções;
+- Persona;
+- Contexto;
+- Restrições;
+- Exemplos;
+- Tom;
+- Formato de saída.
+
+A resposta destacou especialmente a importância do objetivo, contexto, restrições e formato de saída.
+
+### 💡 Aprendizado
+
+Um prompt eficiente não deve apenas apresentar uma pergunta. É importante fornecer **contexto, objetivo, instruções e critérios para a resposta**, aumentando o controle sobre o resultado produzido pela IA.
+
+---
+
+# 🧪 Teste 4 — Retrieval-Augmented Generation (RAG)
+
+### Prompt utilizado
+
+> Explique o conceito de Retrieval-Augmented Generation (RAG). Explique como funciona o processo de recuperação de informações e geração da resposta. Utilize principalmente a fonte acadêmica de Lewis et al. e explique o conceito em linguagem adequada para um estudante iniciante.
+
+### Resultado resumido
+
+A resposta explicou o **RAG** como uma técnica que combina o conhecimento aprendido pelo modelo com informações recuperadas de fontes externas.
+
+O processo foi dividido em:
+
+1. Consulta;
+2. Recuperação de documentos relevantes;
+3. Geração da resposta.
+
+Também foram apresentados os conceitos de:
+
+- Memória paramétrica;
+- Memória não paramétrica;
+- Retriever;
+- Generator.
+
+A resposta destacou que o RAG pode contribuir para reduzir alucinações, aumentar a transparência e facilitar a utilização de informações externas.
+
+### 💡 Aprendizado
+
+O RAG permite conectar modelos de linguagem a **fontes externas de conhecimento**, possibilitando respostas baseadas em informações recuperadas de documentos específicos.
+
+---
+
+# 🧪 Teste 5 — Riscos da IA Generativa
+
+### Prompt utilizado
+
+> Quais são os principais riscos associados à Inteligência Artificial Generativa? Explique conceitos como alucinação, viés, privacidade, segurança e confiabilidade. Utilize as fontes disponíveis neste notebook, especialmente o material do NIST.
+
+### Resultado resumido
+
+A resposta apresentou diversos riscos relacionados à IA Generativa, com destaque para:
+
+- Confabulação ou alucinação;
+- Viés prejudicial;
+- Homogeneização;
+- Privacidade;
+- Segurança da informação;
+- Prompt Injection;
+- Data Poisoning;
+- Confiabilidade;
+- Impacto ambiental;
+- Propriedade intelectual.
+
+Também foram discutidos problemas relacionados à memorização de informações pessoais e à utilização da IA em situações de risco.
+
+### 💡 Aprendizado
+
+O uso de IA Generativa exige **pensamento crítico e responsabilidade**, pois os modelos podem produzir informações incorretas, enviesadas ou potencialmente prejudiciais.
+
+Informações importantes devem ser verificadas antes de serem utilizadas.
+
+---
+
+# 🧪 Teste 6 — Refinamento do Prompt
+
+### Prompt utilizado
+
+> Utilize exclusivamente as fontes disponíveis neste notebook para explicar Inteligência Artificial Generativa.
+>
+> Divida a resposta em:
+>
+> 1. definição;
+> 2. funcionamento;
+> 3. LLMs;
+> 4. Engenharia de Prompts;
+> 5. RAG;
+> 6. limitações;
+> 7. uso responsável.
+>
+> Para cada seção, indique qual fonte sustenta a informação.
+> Caso uma informação não esteja presente nas fontes, informe que ela não foi encontrada.
+
+### Resultado resumido
+
+A resposta apresentou uma explicação estruturada em sete partes:
+
+1. Definição;
+2. Funcionamento;
+3. LLMs;
+4. Engenharia de Prompts;
+5. RAG;
+6. Limitações e riscos;
+7. Uso responsável.
+
+Também foram relacionadas diferentes fontes aos conceitos apresentados, incluindo IBM, NIST, Google Cloud, Google Developers e Lewis et al.
+
+### 💡 Aprendizado
+
+O teste demonstrou que um prompt contendo **escopo, estrutura, restrições e critérios de validação** consegue produzir uma resposta mais organizada e direcionada.
+
+A exigência de utilizar exclusivamente as fontes também reforçou a importância da rastreabilidade das informações.
+
+---
+
+# 🩹 Cicatrizes / Troubleshooting
+
+Durante os testes, alguns aprendizados importantes foram identificados sobre a construção de prompts.
+
+## Cicatriz 1 — Perguntas muito amplas
+
+Perguntas muito abertas podem produzir respostas abrangentes, mas nem sempre adequadas ao objetivo específico do estudo.
+
+### Solução
+
+Adicionar:
+
+- Contexto;
+- Objetivo;
+- Público-alvo;
+- Tópicos específicos;
+- Formato desejado.
+
+---
+
+## Cicatriz 2 — Necessidade de organização
+
+Quando vários conceitos são solicitados simultaneamente, a resposta pode ficar extensa ou pouco organizada.
+
+### Solução
+
+Dividir a solicitação em tópicos e definir previamente a estrutura da resposta.
+
+---
+
+## Cicatriz 3 — Necessidade de rastreabilidade
+
+Para estudos baseados em fontes, é importante saber de onde as informações apresentadas foram retiradas.
+
+### Solução
+
+Solicitar que a resposta seja baseada nas fontes disponíveis e, quando possível, indicar qual fonte sustenta cada informação.
+
+---
+
+## Cicatriz 4 — Controle das informações
+
+Uma resposta de IA pode apresentar informações que não estão presentes nas fontes utilizadas.
+
+### Solução
+
+Adicionar uma restrição explícita:
+
+> "Caso uma informação não esteja presente nas fontes, informe que ela não foi encontrada."
+
+---
+
+## 💡 Principal aprendizado dos testes
+
+O principal aprendizado foi perceber que **a qualidade da resposta depende também da qualidade da instrução fornecida ao modelo**.
+
+O processo de refinamento pode ser representado por:
+
+**Prompt inicial → Teste → Análise → Refinamento → Novo teste → Resultado**
+
+---
+
+# 📖 Miniguia de Estudo
+
+## 1. O que é Inteligência Artificial Generativa?
+
+IA Generativa é uma área da Inteligência Artificial voltada à criação de novos conteúdos a partir de padrões aprendidos em grandes volumes de dados.
+
+Ela pode ser utilizada para gerar:
+
+- Textos;
+- Imagens;
+- Vídeos;
+- Áudios;
+- Código;
+- Outros tipos de conteúdo.
+
+---
+
+## 2. O que são LLMs?
+
+**LLM (Large Language Model)** é um modelo de linguagem treinado com grandes quantidades de texto para aprender padrões e relações da linguagem.
+
+Esses modelos trabalham com tokens e utilizam o contexto disponível para gerar respostas.
+
+---
+
+## 3. O que são Tokens?
+
+Tokens são unidades utilizadas pelos modelos de linguagem para representar e processar textos.
+
+Um token pode representar:
+
+- Uma palavra;
+- Parte de uma palavra;
+- Um caractere;
+- Outros fragmentos de texto.
+
+---
+
+## 4. O que são Transformers?
+
+Transformers são uma arquitetura de Deep Learning utilizada em muitos modelos modernos de linguagem.
+
+Uma de suas principais características é o mecanismo de atenção, que permite analisar relações entre diferentes partes de uma sequência.
+
+---
+
+## 5. O que é Engenharia de Prompts?
+
+É o processo de criação e refinamento de instruções para orientar modelos de IA a produzir respostas mais adequadas.
+
+Um prompt pode utilizar:
+
+**Objetivo + Contexto + Instruções + Restrições + Formato de saída**
+
+---
+
+## 6. O que é RAG?
+
+**Retrieval-Augmented Generation** é uma técnica que permite ao sistema recuperar informações de fontes externas antes de gerar uma resposta.
+
+Fluxo simplificado:
 
 ```text
-Pergunta → Resposta → Avaliação crítica → Problema → Refinamento → Nova resposta → Comparação
-```
-
-## 📖 5. Glossário
-
-| Termo | Definição |
-|---|---|
-| IA | Inteligência Artificial. |
-| IA Generativa | IA capaz de gerar novos conteúdos. |
-| LLM | Large Language Model, modelo de linguagem de grande escala. |
-| Token | Unidade usada para representar partes do texto. |
-| Contexto | Informações disponíveis ao modelo durante uma interação. |
-| Prompt | Instrução fornecida ao modelo. |
-| Engenharia de Prompts | Criação e otimização de instruções para IA. |
-| Transformer | Arquitetura de rede neural usada em muitos modelos modernos. |
-| Atenção | Mecanismo que considera relações entre elementos de uma sequência. |
-| Embedding | Representação numérica de dados em espaço vetorial. |
-| RAG | Retrieval-Augmented Generation. |
-| Alucinação | Informação incorreta ou inventada apresentada de modo plausível. |
-| Viés | Tendência sistemática que pode gerar resultados distorcidos. |
-| Fine-tuning | Adaptação de modelo pré-treinado para uma finalidade. |
-| Inferência | Uso do modelo treinado para produzir uma saída. |
-
-## ♻️ 6. Prompts reutilizáveis
-
-Os prompts completos estão em [`materiais/prompts.md`](materiais/prompts.md).
-
-Exemplos:
-
-### Explicação
-
-> Explique [CONCEITO] para um estudante de Ciência da Computação que está começando a estudar o assunto. Apresente definição, funcionamento, exemplo, aplicação e limitações. Finalize com 5 pontos essenciais.
-
-### Resumo
-
-> Resuma as fontes disponíveis sobre [TEMA]. Organize em conceitos fundamentais, conceitos intermediários, exemplos, aplicações e limitações. Não adicione informações não sustentadas pelas fontes.
-
-### Validação
-
-> Analise a resposta abaixo usando exclusivamente as fontes disponíveis. Classifique cada afirmação como sustentada, parcialmente sustentada ou não encontrada.
-
-## 📊 7. Critérios de avaliação
-
-As respostas podem ser avaliadas de 1 a 5 nos seguintes critérios:
-
-- Precisão
-- Aderência às fontes
-- Clareza
-- Organização
-- Profundidade
-- Utilidade para estudo
-- Rastreabilidade
-
-## 🚀 8. Melhorias futuras
-
-O projeto pode ser expandido com:
-
-- Agentes de IA;
-- embeddings;
-- bancos vetoriais;
-- fine-tuning;
-- avaliação de LLMs;
-- segurança de aplicações de IA;
-- prompt injection;
-- agentes autônomos;
-- IA multimodal.
-
-## 🏁 9. Conclusão
-
-O projeto mostrou que utilizar IA para estudar não significa apenas solicitar respostas prontas. Um processo mais eficiente envolve **curadoria → pergunta → resposta → avaliação → refinamento → validação → síntese**.
-
-O NotebookLM pode apoiar esse processo ao trabalhar com um conjunto definido de fontes, enquanto o GitHub permite documentar e apresentar o resultado como portfólio.
-
-O principal aprendizado foi compreender que respostas de IA precisam ser analisadas criticamente. A qualidade das fontes, a formulação do prompt, o contexto e a validação humana continuam sendo fundamentais.
-
-## 📂 Estrutura do repositório
-
-```text
-miniguia-ia-generativa-notebooklm/
-├── README.md
-├── fontes/
-│   └── fontes.md
-└── materiais/
-    └── prompts.md
-```
-
-## 👨‍💻 Autor
-
-**Gustavo Rodrigues**  
-Estudante de Ciência da Computação.
-
-Projeto desenvolvido para fins educacionais e de portfólio como parte do desafio da DIO sobre Inteligência Artificial como ferramenta de aprendizagem ativa.
+Pergunta
+   ↓
+Busca por informações relevantes
+   ↓
+Recuperação de documentos
+   ↓
+Modelo de linguagem
+   ↓
+Resposta baseada nas informações recuperadas
